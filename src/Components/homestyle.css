@@ -1,0 +1,131 @@
+.mainBlock {
+  width: 100%;
+  background-image: url("./imgs/FundoCepacMobile.png");
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-top: 10%;
+  background-color: whitesmoke;
+}
+
+.mobileLogo {
+  width: 40%;
+}
+
+.webLogo {
+  display: none;
+}
+
+.mainTitle {
+  width: fit-content;
+}
+
+.pixBlock {
+  width: 90vw;
+  display: flex;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+.pixBlock img {
+  width: 100%;
+}
+
+.pixBlock.cupece img {
+  width: 95%;
+}
+
+#transferenciaBancaria {
+  width: 70vw;
+  padding: 10px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 3px #d5d5d5;
+  font-size: smaller;
+  margin-bottom: 15%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  gap: 15px;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .mainTitle {
+    font-size: 70px;
+  }
+
+  .mainBlock {
+    width: 100%;
+
+    background-image: url("./imgs/FundoCepacWeb.png");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 5%;
+  }
+
+  .webLogo {
+    display: block;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+
+  .pixBlocksWrapper {
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    gap: 60px;
+  }
+
+  .pixBlock.cupece img {
+    width: 100%;
+    height: 87px;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    gap: 15px;
+    bottom: 0;
+  }
+
+  #transferenciaBancaria {
+    width: 20vw;
+    font-size: large;
+  }
+}
+
+@media (min-width: 1400px) {
+  .pixBlock.cupece img {
+    width: 100%;
+    height: 117px;
+  }
+}
