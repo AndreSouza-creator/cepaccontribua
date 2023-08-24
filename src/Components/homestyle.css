@@ -1,7 +1,8 @@
 .mainBlock {
   width: 100%;
   background-image: url("./imgs/FundoCepacMobile.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,8 +73,9 @@ footer {
 
   .mainBlock {
     width: 100%;
-
     background-image: url("./imgs/FundoCepacWeb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
