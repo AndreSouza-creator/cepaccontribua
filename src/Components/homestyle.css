@@ -9,6 +9,7 @@
   align-items: center;
   gap: 25px;
   padding-top: 10%;
+  padding-bottom: 5%;
   background-color: whitesmoke;
 }
 
@@ -21,7 +22,10 @@
 }
 
 .mainTitle {
-  width: fit-content;
+  width: 50%;
+  font-family: HOSSA;
+  font-size: 50px;
+  line-height: 55px;
 }
 
 .pixBlock {
@@ -66,6 +70,14 @@ footer {
   bottom: 0;
 }
 
+.wrapperSocialLinks a{
+  text-decoration: none;
+  color: white;
+}
+.wrapperSocialLinks a:active{
+  color:white;
+}
+
 @media (min-width: 1024px) {
   .mainTitle {
     font-size: 70px;
@@ -93,6 +105,10 @@ footer {
     display: none;
   }
 
+  .mainTitle{
+    width: fit-content;
+  }
+
   .pixBlocksWrapper {
     width: 50vw;
     height: fit-content;
@@ -108,6 +124,42 @@ footer {
   footer {
     background-color: black;
     color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    gap: 15px;
+    bottom: 0;
+    font-size: larger;
+  }
+
+  #transferenciaBancaria {
+    width: 20vw;
+    font-size: large;
+    margin-bottom: 8%;
+  }
+
+  .wrapperSocialLinks{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+}
+
+@media (min-width: 1400px) {
+  .pixBlock.cupece img {
+    width: 100%;
+    height: 100px;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
     position: absolute;
     width: 100%;
     display: flex;
@@ -117,17 +169,15 @@ footer {
     align-items: center;
     gap: 15px;
     bottom: 0;
-  }
-
-  #transferenciaBancaria {
-    width: 20vw;
-    font-size: large;
+    font-size: larger;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1900px) {
   .pixBlock.cupece img {
     width: 100%;
-    height: 117px;
+    height: 120px;
+    padding-top: 2px;
   }
+
 }

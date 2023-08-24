@@ -5,6 +5,7 @@ import MiriamPix from "./imgs/MiriamQR.png";
 import CupeceQR from "./imgs/CupeceQR.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Facebook from "@mui/icons-material/Facebook";
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function Home() {
   return (
@@ -30,9 +31,10 @@ export default function Home() {
       </main>
       <footer>
         Nos siga nas redes sociais:
-        <div>
-          <InstagramIcon />
-          <Facebook />
+        <div className="wrapperSocialLinks">
+          <a href="https://www.instagram.com/cepacchurch/"><InstagramIcon sx={{fontSize: 45}}/></a>
+          <a href="https://www.facebook.com/CEPACchurch"><Facebook sx={{fontSize: 45}}/></a>
+          <a href="https://www.youtube.com/@CEPACChurch"><YouTubeIcon sx={{fontSize: 45}}/></a>
         </div>
       </footer>
     </>
